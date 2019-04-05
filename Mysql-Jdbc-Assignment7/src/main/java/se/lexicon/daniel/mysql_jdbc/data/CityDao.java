@@ -1,7 +1,5 @@
 package se.lexicon.daniel.mysql_jdbc.data;
-
 import java.util.List;
-
 import se.lexicon.daniel.mysql_jdbc.model.CityModel;
 
 public interface CityDao {
@@ -14,5 +12,6 @@ public interface CityDao {
 	List<CityModel> findCitiesByCode(String code);
 	List<CityModel> findCitiesByName(String name);
 	List<CityModel> findAllCities();
+
 
 }
