@@ -7,7 +7,7 @@ public interface CityDao {
 	CityModel findCityById( int id);
 	CityModel addCity(CityModel city);
 	CityModel updateCity(CityModel city);
-	int deleteCity(CityModel city);
+	CityModel deleteCity(CityModel city);
 	
 	List<CityModel> findCitiesByCode(String code);
 	List<CityModel> findCitiesByName(String name);

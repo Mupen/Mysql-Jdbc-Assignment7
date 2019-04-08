@@ -165,7 +165,10 @@ public class ConsoleMenuController {
 
 	private void deleteInterface() {
 		// TODO Auto-generated method stub
-
+		System.out.print("\n Type in id of the object you want to delete. ");
+		int userIdInput = KeyboardInput.getInt();
+		acquiredCity = dao.findCityById(userIdInput);
+		dao.deleteCity(acquiredCity);
 	}
 
 }
